@@ -11,7 +11,7 @@ This study is ran from ubuntu 18.04.2
  - 디버깅 및 시각화, 시뮬레이션 등의 다양한 도구를 통해 개발의 속도를 향상. <br>
  - Ubuntu에서 Python과 C++을 기반으로, 프로세스(노드) 사이의 통신 가능. <br>
  - 여러 프로세스 사이의 통신 부분을 담당하는 중간 다리 역할. <br>
-
+<br><br>
 <h2>ROS Filesystem</h2>
  - Meta Package: 특수화된 패키지로서, 관련된 패키지들을 모아놓은 것. <br>
 
@@ -20,7 +20,7 @@ Node: 기본 프로세스. <br>
 Message: 송수신 데이터. <br>
 Bags: ROS에서 데이터를 저장 및 불러올 때 사용, Master에서 확인 가능한 Topic들을 모두 저장 가능, 이를 다시 재생하는 기능 제공. <br>
 Topics: 메시지를 식별하기 이름을 붙여놓은 것. Topic을 보내는 것을 Publish, 받는 것을 Subscribe, 기록하는 것을 Bags. <br>
-
+<br><br>
 <h2>ROS 명령어</h2>
  - roscd: 위치한 ros 패키지의 폴더로 이동. <br>
  - rosls: <br>
