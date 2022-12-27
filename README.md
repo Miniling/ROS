@@ -26,7 +26,7 @@ Topics: 메시지를 식별하기 이름을 붙여놓은 것. Topic을 보내는
 
 <h2>ROS 명령어</h2>
  '명령어' + '패키지' + '파일' 순으로 입력. <br>
- (
+ 꿀팁! 'Tab'키를 사용하면 명령어를 확인 및 사용할 수 있다! <br><br>
  - roscore: ROS master 실행. <br>
  - roscd: 위치한 ros 패키지의 폴더로 이동. <br>
  - rosls: <br>
