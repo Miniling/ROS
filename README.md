@@ -28,6 +28,12 @@ Topics: 메시지를 식별하기 이름을 붙여놓은 것. Topic을 보내는
  '명령어' + '패키지' + '파일' 순으로 입력. <br>
  꿀팁! 'Tab'키를 사용하면 명령어를 확인 및 사용할 수 있다! <br><br>
  - roscore: ROS master 실행. <br>
+ - rostopic: topic 관련 명령어. <br>
+  -- echo: topic 출력(퍼블리셔가 전달하는 토픽(메세지) 출력) <br>
+  -- find:
+  -- info:
+  -- list:
+  -- pub: publishing. 전달할 토픽(메세지) 직접 입력 가능. (option -r: rate. 
  - roscd: 위치한 ros 패키지의 폴더로 이동. <br>
  - rosls: <br>
  - rosed: <br>
@@ -47,4 +53,4 @@ Topics: 메시지를 식별하기 이름을 붙여놓은 것. Topic을 보내는
  - rqt: 데이터 시각화를 위한 rqt를 실행 <br>
 
 인지 -> 판단 -> 제어 <br>
-sensor algorithm motor
+sensor algorithm motor<br>
