@@ -46,3 +46,5 @@ Topics: 메시지를 식별하기 이름을 붙여놓은 것. Topic을 보내는
  - rviz: 3D 시각화를 위한 rviz를 실행 <br>
  - rqt: 데이터 시각화를 위한 rqt를 실행 <br>
 
+인지 -> 판단 -> 제어 <br>
+sensor algorithm motor
