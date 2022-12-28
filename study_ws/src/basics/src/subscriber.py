@@ -5,7 +5,7 @@ from geometry_msgs.msg import Twist
 
 def callback(msg):
     print(msg.data)
-    cahnge_data = 'min : '+str(msg.data)  # string type data
+    cahnge_data = 'min : '+str((msg.data % 6))  # string type data
     pub.publish(cahnge_data)
 
 rospy.init_node('topic_subscriber')  # subscribe from publisher
