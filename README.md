@@ -87,10 +87,21 @@ sensor algorithm motor<br>
 영상처리 <br>
 카메라로 받아온 데이터에서 도로 영역만을 확인하여, 차선 및 도로방향지시 추출 <br>
 추출한 데이터를 바탕으로 차선기반 주행 <br>
- - 검출된 차선 주행
- - 계산된 차선과의 거리값과 각도를 이용하여 제어
- - 위에서 구한 곡률로부터 steering값을 계산
- - pure persuit에서 사용하는 식을 통해 계산, 뒷축을 기준으로 한 점에 대하여 곡률을 구한 다음 steering값을 구하여 그 차량의 점을 추종하는 방식.
- - k는 곡률, L은 차량의 길이, delta는 조향각을 의미.  k=1/R, R=L/tan(delta)
- - 조향각 delta를 구하기 위해 위의 식을 아래 식에 대입하면 1/k=L/tan(delta) 식을 얻을 수 있음.
- - 카메라를 통해서 Local path를 계산할 수 있음.
+ - 검출된 차선 주행 <br>
+ - 계산된 차선과의 거리값과 각도를 이용하여 제어 <br>
+ - 위에서 구한 곡률로부터 steering값을 계산 <br>
+ - pure persuit에서 사용하는 식을 통해 계산, 뒷축을 기준으로 한 점에 대하여 곡률을 구한 다음 steering값을 구하여 그 차량의 점을 추종하는 방식. <br>
+ - k는 곡률, L은 차량의 길이, delta는 조향각을 의미.  k=1/R, R=L/tan(delta) <br>
+ - 조향각 delta를 구하기 위해 위의 식을 아래 식에 대입하면 1/k=L/tan(delta) 식을 얻을 수 있음. <br>
+ - 카메라를 통해서 Local path를 계산할 수 있음. <br>
+ <br>
+ 
+ <h2>SLAM</h2>
+ - Simultaneous Localization And Mapping, 동시적 위치 추정 및 지도 작성) <br>
+  - auto driving: 특정 조건을 만족하면서 주행(ex: 차선인식 등) <br>
+  - navigation: map상에서 출발지 및 목적지에 따라 경로를 생성하고 자율로 주행 <br>
+ <p>Bayesian Theory</p>
+  - 처음 위치는 알 수 없지만, 다음에 오는 정보에서 위치를 예측(특징점 활용) <br>
+ <p>Motion model</p>
+  - 실제 로봇에는 odometry-based model과 velocity-based model로 구분 <br>
+  - 현재는 제어기의 성능 향상으로 두 가지 모두를 이용해 위치를 추정 <br>
